@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\common\dllmain.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\proxydll.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="cryptsp.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="cryptsp.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cryptsp.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{a419a3e2-05b9-4f17-a07b-82aa23e5d12f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\proxydll.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
